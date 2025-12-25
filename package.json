@@ -1,0 +1,14 @@
+{
+  "name": "1cd9dff9acadccad",
+  "main": "1cd9dff9acadccad@243.js",
+  "version": "243.0.0",
+  "homepage": "https://observablehq.com/d/1cd9dff9acadccad",
+  "author": {
+    "name": "Stchiu",
+    "url": "https://observablehq.com/@stchiu"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}
