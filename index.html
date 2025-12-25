@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Slope chart</title>
+<link rel="stylesheet" type="text/css" href="./inspector.css">
+<body>
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/+esm";
+import {Library} from "https://cdn.jsdelivr.net/npm/@observablehq/stdlib@5/+esm";
+import define from "./index.js";
+
+const runtime = new Runtime(new Library());
+runtime.module(define, Inspector.into(document.body));
+</script>
