@@ -4,11 +4,10 @@
 <link rel="stylesheet" type="text/css" href="./inspector.css">
 <body>
 <script type="module">
-
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/+esm";
+import {Library} from "https://cdn.jsdelivr.net/npm/@observablehq/stdlib@5/+esm";
 import define from "./index.js";
-import {Runtime, Library, Inspector} from "./runtime.js";
 
 const runtime = new Runtime(new Library());
-const main = runtime.module(define, Inspector.into(document.body));
-
+runtime.module(define, Inspector.into(document.body));
 </script>
